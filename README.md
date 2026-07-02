@@ -39,15 +39,15 @@ Anda tidak perlu repot mendownload file secara manual. Cukup buka Terminal dan j
 
 ### 🛠️ Panduan Penggunaan & Fitur Menu
 Saat program terbuka, Anda akan melihat beberapa opsi menu:
- [1]. Cek Device Terhubung: Gunakan ini pertama kali untuk memastikan HP sudah terdeteksi. Harus ada tulisan ⁠device⁠ di samping nomor seri HP. Kalau tulisannya ⁠unauthorized⁠, cek layar HP dan izinkan USB Debugging.
- [2]. Lihat Daftar Aplikasi di HP: Fitur untuk melihat semua package aplikasi. Anda bisa memfilter khusus aplikasi user (yang diinstal sendiri), aplikasi sistem bawaan, atau aplikasi sistem yang Aman Dihapus.
- [3]. Scan & Hapus Bloatware Bawaan (Auto): Tool akan otomatis memindai HP Anda dan membandingkannya dengan daftar bloatware umum (seperti Google Play Movies, Facebook App Manager, AR Lens, dll). Anda bisa menghapus semuanya sekaligus hanya dengan mengetik ⁠Y⁠.
- [4]. Hapus Aplikasi Manual (Multi Input): Hapus aplikasi spesifik. Anda bisa memasukkan banyak package sekaligus dengan memisahkannya menggunakan spasi. (Contoh: ⁠com.google.ar.lens com.facebook.katana⁠).
- [5]. Restore Aplikasi: Jika ada aplikasi sistem yang tidak sengaja terhapus dan sistem menjadi error, masukkan nama package-nya di sini untuk mengembalikannya secara utuh tanpa perlu factory reset.
- [6]. Bersihkan Semua Cache HP: Membersihkan file sampah (cache) dari semua aplikasi secara otomatis dan sangat aman. Tidak akan menghapus akun, login, atau data penting!
- [7]. Hapus Data App / pm clear (RESIKO TINGGI): Mereset aplikasi tertentu ke kondisi awal seperti baru diunduh. Perhatian: Semua data login dan pengaturan di dalam aplikasi tersebut akan hilang!
- [8]. Export Daftar Aplikasi ke File TXT: Menyimpan daftar semua nama aplikasi di HP Anda ke dalam file ⁠.txt⁠ di PC agar mudah disalin/dibaca.
- [9]. Reboot Device: Opsi shortcut untuk merestart HP ke mode Normal, Recovery, atau Bootloader (Fastboot).
+[1]. Cek Device Terhubung: Gunakan ini pertama kali untuk memastikan HP sudah terdeteksi. Harus ada tulisan ⁠device⁠ di samping nomor seri HP. Kalau tulisannya ⁠unauthorized⁠, cek layar HP dan izinkan USB Debugging.
+[2]. Lihat Daftar Aplikasi di HP: Fitur untuk melihat semua package aplikasi. Anda bisa memfilter khusus aplikasi user (yang diinstal sendiri), aplikasi sistem bawaan, atau aplikasi sistem yang Aman Dihapus.
+[3]. Scan & Hapus Bloatware Bawaan (Auto): Tool akan otomatis memindai HP Anda dan membandingkannya dengan daftar bloatware umum (seperti Google Play Movies, Facebook App Manager, AR Lens, dll). Anda bisa menghapus semuanya sekaligus hanya dengan mengetik ⁠Y⁠.
+[4]. Hapus Aplikasi Manual (Multi Input): Hapus aplikasi spesifik. Anda bisa memasukkan banyak package sekaligus dengan memisahkannya menggunakan spasi. (Contoh: ⁠com.google.ar.lens com.facebook.katana⁠).
+[5]. Restore Aplikasi: Jika ada aplikasi sistem yang tidak sengaja terhapus dan sistem menjadi error, masukkan nama package-nya di sini untuk mengembalikannya secara utuh tanpa perlu factory reset.
+[6]. Bersihkan Semua Cache HP: Membersihkan file sampah (cache) dari semua aplikasi secara otomatis dan sangat aman. Tidak akan menghapus akun, login, atau data penting!
+[7]. Hapus Data App / pm clear (RESIKO TINGGI): Mereset aplikasi tertentu ke kondisi awal seperti baru diunduh. Perhatian: Semua data login dan pengaturan di dalam aplikasi tersebut akan hilang!
+[8]. Export Daftar Aplikasi ke File TXT: Menyimpan daftar semua nama aplikasi di HP Anda ke dalam file ⁠.txt⁠ di PC agar mudah disalin/dibaca.
+[9]. Reboot Device: Opsi shortcut untuk merestart HP ke mode Normal, Recovery, atau Bootloader (Fastboot).
 
 ### 💡 Kustomisasi (Advance User)
 Jika Anda ingin menambahkan daftar aplikasi pengganggu Anda sendiri ke dalam fitur Hapus Auto (Menu 3), Anda cukup mengedit file ⁠debloater.bat⁠ menggunakan Notepad, lalu cari baris ⁠set "bloatware_list=..."⁠ dan tambahkan nama package aplikasi yang ingin Anda targetkan di sana (pisahkan dengan spasi).
