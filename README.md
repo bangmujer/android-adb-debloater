@@ -37,7 +37,9 @@ Anda tidak perlu repot mendownload file secara manual. Cukup buka Terminal dan j
 3. Simpan file di folder mana saja di PC Anda (misal: di Desktop).
 4. Klik 2x (Double-Click) file ⁠debloater.bat⁠ tersebut untuk membukanya.
 
-### 🛠️ Panduan Penggunaan & Fitur Menu
+---
+
+## 🛠️ Panduan Penggunaan & Fitur Menu
 Saat program terbuka, Anda akan melihat beberapa opsi menu:
 1. Cek Device Terhubung: Gunakan ini pertama kali untuk memastikan HP sudah terdeteksi. Harus ada tulisan ⁠device⁠ di samping nomor seri HP. Kalau tulisannya ⁠unauthorized⁠, cek layar HP dan izinkan USB Debugging.
 2. Lihat Daftar Aplikasi di HP: Fitur untuk melihat semua package aplikasi. Anda bisa memfilter khusus aplikasi user (yang diinstal sendiri), aplikasi sistem bawaan, atau aplikasi sistem yang Aman Dihapus.
@@ -49,9 +51,11 @@ Saat program terbuka, Anda akan melihat beberapa opsi menu:
 8. Export Daftar Aplikasi ke File TXT: Menyimpan daftar semua nama aplikasi di HP Anda ke dalam file ⁠.txt⁠ di PC agar mudah disalin/dibaca.
 9. Reboot Device: Opsi shortcut untuk merestart HP ke mode Normal, Recovery, atau Bootloader (Fastboot).
 
-### 💡 Kustomisasi (Advance User)
+## 💡 Kustomisasi (Advance User)
 Anda tidak perlu lagi mengedit file ⁠.bat⁠ untuk menambah target aplikasi bloatware. Saat pertama kali dijalankan, script ini akan otomatis membuat file bernama ⁠bloatware_list.txt⁠ di folder yang sama. Anda cukup membuka file ⁠.txt⁠ tersebut, lalu tambahkan nama package aplikasi pengganggu yang ingin dihapus (bisa ditekan Enter ke bawah atau dipisah spasi).
+--
 
 ## Penafian (Disclaimer)
 Tool ini hanya melakukan uninstalasi di level "User" (⁠--user 0⁠), yang berarti aplikasi sebenarnya tidak terhapus dari partisi sistem Android, melainkan disembunyikan dan di-nonaktifkan secara total. Ini adalah metode yang paling aman. Jika terjadi error atau bootloop karena menghapus sistem inti, HP dapat dikembalikan ke keadaan normal dengan melakukan Factory Reset via Recovery Mode.
+
 ---
