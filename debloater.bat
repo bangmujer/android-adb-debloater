@@ -34,9 +34,31 @@ if %errorlevel% neq 0 (
 )
 
 :: =========================================================================
-:: DAFTAR BLOATWARE AMAN (Tambahkan package di sini, pisahkan dengan spasi)
+:: LOAD DAFTAR BLOATWARE DARI FILE TXT
 :: =========================================================================
-set "bloatware_list=com.google.android.apps.tachyon com.google.android.videos com.google.android.music com.google.android.apps.books com.facebook.services com.facebook.appmanager com.facebook.system com.google.ar.lens"
+set "bloatware_file=%~dp0bloatware_list.txt"
+
+:: Jika file txt belum ada, buat otomatis dengan daftar default
+if not exist "%bloatware_file%" (
+    echo Membuat file konfigurasi bloatware_list.txt default...
+    (
+    echo com.google.android.apps.tachyon
+    echo com.google.android.videos
+    echo com.google.android.music
+    echo com.google.android.apps.books
+    echo com.facebook.services
+    echo com.facebook.appmanager
+    echo com.facebook.system
+    echo com.google.ar.lens
+    ) > "%bloatware_file%"
+    timeout /t 1 >nul
+)
+
+:: Membaca isi file txt ke dalam variabel (mendukung spasi maupun baris baru)
+set "bloatware_list="
+for /f "usebackq tokens=*" %%A in ("%bloatware_file%") do (
+    set "bloatware_list=!bloatware_list! %%A"
+)
 
 :menu
 cls
@@ -49,7 +71,7 @@ echo   ██╔══██║██║  ██║██╔══██╗
 echo   ██║  ██║██████╔╝██████╔╝
 echo   ╚═╝  ╚═╝╚═════╝ ╚═════╝ 
 echo   ===========================================================
-echo         ANDROID ADB DEBLOATER TOOL v4.0 - by Bang Mujer
+echo         ANDROID ADB DEBLOATER TOOL v5.0 - by Bang Mujer
 echo   ===========================================================
 echo   [1]. Cek Device Terhubung
 echo   [2]. Lihat Daftar Aplikasi di HP (User ^& System)
@@ -134,7 +156,7 @@ if "%app_menu%"=="3" (
     del temp_sys.txt
     if "!ketemu!"=="0" echo Tidak ada aplikasi dari daftar aman yang terdeteksi.
     echo -------------------------------------------------------
-    echo * Daftar ini difilter berdasarkan variabel "bloatware_list".
+    echo * Daftar ini difilter berdasarkan file "bloatware_list.txt".
     echo.
     pause
     goto lihat_aplikasi
