@@ -52,5 +52,5 @@ Saat program terbuka, Anda akan melihat beberapa opsi menu:
 ### 💡 Kustomisasi (Advance User)
 Anda tidak perlu lagi mengedit file ⁠.bat⁠ untuk menambah target aplikasi bloatware. Saat pertama kali dijalankan, script ini akan otomatis membuat file bernama ⁠bloatware_list.txt⁠ di folder yang sama. Anda cukup membuka file ⁠.txt⁠ tersebut, lalu tambahkan nama package aplikasi pengganggu yang ingin dihapus (bisa ditekan Enter ke bawah atau dipisah spasi).
 
-### Penafian (Disclaimer)
+## Penafian (Disclaimer)
 Tool ini hanya melakukan uninstalasi di level "User" (⁠--user 0⁠), yang berarti aplikasi sebenarnya tidak terhapus dari partisi sistem Android, melainkan disembunyikan dan di-nonaktifkan secara total. Ini adalah metode yang paling aman. Jika terjadi error atau bootloop karena menghapus sistem inti, HP dapat dikembalikan ke keadaan normal dengan melakukan Factory Reset via Recovery Mode.
